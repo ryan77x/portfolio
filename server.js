@@ -8,6 +8,13 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const app = express();
 
+const myData = {
+    person: {
+        firstName: 'Ryan',
+        lastName: 'Liang',
+    }
+};
+
 const msg = {
     to: 'ryan8x@gmail.com',
     from: '',
@@ -26,14 +33,7 @@ app.set('views', './views');
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    const data = {
-        person: {
-            firstName: 'Ryan',
-            lastName: 'Liang',
-        }
-    };
-
-    res.render('index', data);
+    res.render('index', myData);
 });
 
 app.get('/contact', (req, res) => {
