@@ -1,0 +1,9 @@
+body {
+  background: #136a8a;
+  background: -webkit-linear-gradient(to left, #b3e6eb, #6281c9);
+  background: linear-gradient(to left, #b3e6eb, #6281c9);
+}
+
+.job-title {
+  font-size: 12px
+}

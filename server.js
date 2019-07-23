@@ -17,6 +17,7 @@ const msg = {
 };
 
 app.use(morgan('dev'));
+app.use(express.static('public'));
 //app.use('profile', profile);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -39,10 +40,14 @@ app.get('/contact', (req, res) => {
     res.render('contact.ejs');
 });
 
+app.get('/resume', (req, res) => {
+    res.render('resume.ejs');
+});
+
 app.post('/thanks', (req, res) => {
     let contact = req.body;
-    let text = "Name: " + contact.firstName + " " + contact.lastName + "    Email: " + contact.email;
-    let html = "<strong>Name: </strong>" + contact.firstName + " " + contact.lastName + "<br><strong>Email: </strong>" + contact.email;
+    let text = "Name: " + contact.firstName + " " + contact.lastName + "    Email: " + contact.email + "<br>" + contact.message;
+    let html = "<strong>Name: </strong>" + contact.firstName + " " + contact.lastName + "<br><strong>Email: </strong>" + contact.email + "<br><strong>Message: </strong>" + contact.message;
 
     msg.from = contact.email;
     msg.text = text;
