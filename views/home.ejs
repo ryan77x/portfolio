@@ -1,18 +1,33 @@
 <div>
-    <p>Hello, my name is <%= person.firstName %> <%= person.lastName %>.  I'm currently a student at San Diego Code School and am pursuing a career in SW development.</p>  
+    <p>
+        Hello, my name is <%= person[0].firstName %> <%= person[1].lastName %>.  I'm currently a student at San Diego Code School and am pursuing a career in SW development.  
+        I have the following skill sets:
+    </p>  
+    <br>
     <div>
-        <strong>Skill Set:</strong>
-        <ul>
-            <li>HTML / CSS / Bootstrap / DOM API</li>
-            <li>JQuery</li>
-            <li>React</li>
-            <li>JavaScript</li>
-            <li>Java</li>
-            <li>ExpressJS</li>
-            <li>MySQL / MongoDB / Edis</li>
-            <li>RESTful API</li>
-            <li>GIT</li>
-            <li>Unit level and end-to-end testing (Mocha / Chai / Nightmare)</li>
-        </ul>
+        <div>
+            <strong>Coding Languages:</strong>
+            <ul>
+                <% coding_languages.forEach(function(language){ %>
+                    <li><%= language.name %></li>
+                <% }) %>    
+            </ul>
+        </div>
+        <div>
+            <strong>Tech Stacks:</strong>
+            <ul>
+                <% tech_stacks.forEach(function(tech){ %>
+                    <li><%= tech.name %></li>
+                <% }) %>    
+            </ul>
+        </div>
+        <div>
+            <strong>Development Tools:</strong>
+            <ul>
+                <% dev_tools.forEach(function(tool){ %>
+                    <li><%= tool.name %></li>
+                <% }) %>    
+            </ul>
+        </div>
     </div>
 </div>

@@ -7,3 +7,13 @@ body {
 .job-title {
   font-size: 12px
 }
+
+a:link, a:visited {
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(156, 180, 19);
+}

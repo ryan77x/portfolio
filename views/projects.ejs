@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include header.ejs %>
+</head>
+<body>
+  
+<br>
+
+<div class="container-fluid">
+    <% include top-section.ejs %>
+    <br><br>
+    <div>
+        <p>Links to my coding projects:</p>  
+        <div>
+            <strong>Web apps:</strong>
+            <ul>
+                <% webProjects.forEach(function(project){ %>
+                    <li><%= project.name %> <a href='<%= project.heroku %>' target="_blank">| Heroku</a> <a href='<%= project.github %>' target="_blank">| GitHub</a></li>
+                <% }) %>    
+            </ul>
+        </div>
+        <div>
+            <strong>Java desktop app:</strong>
+            <ul>
+                <% desktopProjects.forEach(function(project){ %>
+                    <li><%= project.name %> <a href='<%= project.screenshots %>' target="_blank">| Screenshots</a> <a href='<%= project.github %>' target="_blank">| GitHub</a></li>
+                <% }) %>  
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
