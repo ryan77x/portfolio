@@ -9,6 +9,7 @@ body {
 }
 
 a:link, a:visited {
+  color: blue;
   text-align: left;
   text-decoration: none;
   display: inline-block;
