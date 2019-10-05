@@ -18,32 +18,35 @@ const myData = {
         {name: 'Java'},
     ],
     tech_stacks: [
-        {name: 'HTML / CSS / Bootstrap'},
+        {name: 'HTML / CSS / Bootstrap / Sass / JSON / SQL'},
         {name: 'DOM API / JQuery'},
-        {name: 'React'},
-        {name: 'ExpressJS'},
+        {name: 'React / Redux'},
+        {name: 'ExpressJS / Lookback / Node'},
         {name: 'MySQL / MongoDB / Edis'},
         {name: 'RESTful API'},
-        {name: 'Unit level and end-to-end testing (Mocha / Chai / Nightmare)'},
+        {name: 'Mocha / Chai / Nightmare / Cypress / JUnit / Mockserver'},
     ],
     dev_tools: [
-        {name: 'GIT'},
-        {name: 'Visual studio code'},
-        {name: 'Eclipse'},
+        {name: 'GIT / Github'},
+        {name: 'Visual studio code / Eclipse'},
         {name: 'Postman'},
         {name: 'Chrome dev tool'},
+        {name: 'Jenkins / CircleCI'},
+        {name: 'Heroku / Azure'},
     ],
 };
 
 const myProjects = {
     webProjects: [
-        {name: 'Web APIs Hackathon', github: 'https://github.com/ryan77x/hackathon', heroku: 'https://rl-hackathon1.herokuapp.com/'},
+        {name: 'Creating Coding Careers', github: '', heroku: 'https://www.creatingcodingcareers.org'},
+        {name: 'Movie finder app', github: 'https://github.com/ryan77x/react200-movie-finder', heroku: 'https://rl-react200-movie-finder.herokuapp.com/'},
+        {name: 'Weather app', github: 'https://github.com/ryan77x/react200-weather-app', heroku: 'https://rl-react200-weather-app.herokuapp.com/'},
         {name: 'Very simple todo app', github: 'https://github.com/ryan77x/react100-vstda', heroku: 'https://rl-react100-vstda.herokuapp.com/'},
-        {name: 'Change calculator', github: 'https://github.com/ryan77x/react100-change-calculator', heroku: 'https://rl-react100-change-calculator.herokuapp.com/'},
-        {name: 'Mortgage calculator', github: 'https://github.com/ryan77x/react100-mortgage-calculator', heroku: 'https://rl-react-mortgage-calculator.herokuapp.com/'},
+        {name: 'Web APIs Hackathon', github: 'https://github.com/ryan77x/hackathon', heroku: 'https://rl-hackathon1.herokuapp.com/'},
     ],
     desktopProjects: [
-        {name: 'Media store', github: 'https://github.com/ryan77x/hackathon', screenshots: ''},
+        {name: 'Media Inventory', github: 'https://github.com/ryan8x/h3wj3', screenshots: ''},
+        {name: 'Knock Knock', github: 'https://github.com/ryan8x/h3wdj4', screenshots: ''},
     ]
 };
 
