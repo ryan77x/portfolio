@@ -16,15 +16,17 @@ const myData = {
     coding_languages: [
         {name: 'JavaScript'},
         {name: 'Java'},
+        {name: 'Python'},
+        {name: 'C++'},
     ],
     tech_stacks: [
         {name: 'HTML / CSS / Bootstrap / Sass / JSON / SQL'},
         {name: 'DOM API / JQuery'},
         {name: 'React / Redux'},
-        {name: 'ExpressJS / Lookback / Node'},
+        {name: 'Express.js / Lookback / Node.js'},
         {name: 'MySQL / MongoDB / Edis'},
         {name: 'RESTful API'},
-        {name: 'Mocha / Chai / Nightmare / Cypress / JUnit / Mockserver'},
+        {name: 'Mocha / Chai / Nightmare / JUnit / Jasmine / Cypress / Selenium / Robot Framework / Mockserver'},
     ],
     dev_tools: [
         {name: 'GIT / Github'},
@@ -32,7 +34,7 @@ const myData = {
         {name: 'Postman'},
         {name: 'Chrome dev tool'},
         {name: 'Jenkins / CircleCI'},
-        {name: 'Heroku / Azure'},
+        {name: 'Heroku / Azure / AWS'},
     ],
 };
 
@@ -45,8 +47,8 @@ const myProjects = {
         {name: 'Web APIs Hackathon', github: 'https://github.com/ryan77x/hackathon', heroku: 'https://rl-hackathon1.herokuapp.com/'},
     ],
     desktopProjects: [
-        {name: 'Media Inventory', github: 'https://github.com/ryan8x/h3wj3', screenshots: ''},
-        {name: 'Knock Knock', github: 'https://github.com/ryan8x/h3wdj4', screenshots: ''},
+        {name: 'Media Inventory', github: 'https://github.com/ryan77x/media-inventory', screenshots: ''},
+        {name: 'Knock Knock chat', github: 'https://github.com/ryan77x/knock-knock-chat', screenshots: ''},
     ]
 };
 
